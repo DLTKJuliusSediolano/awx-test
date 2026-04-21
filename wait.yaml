@@ -1,0 +1,9 @@
+---
+- name: Wait 5 minutes test job
+  hosts: localhost
+  gather_facts: false
+
+  tasks:
+    - name: Pause for 5 minutes
+      ansible.builtin.pause:
+        minutes: 5
